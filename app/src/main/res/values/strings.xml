@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Compass</string>
+
+    <string-array name="locations">
+        <item>North</item>
+        <item>South</item>
+        <item>Taco Bell</item>
+        <item>Ann Arbor</item>
+        <item>Custom</item>
+    </string-array>
+
+</resources>

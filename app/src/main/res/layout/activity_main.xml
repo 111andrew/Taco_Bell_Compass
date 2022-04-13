@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_azimuth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerSelection"
+        android:text="Compass"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/locationText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/img_compass"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/txt_azimuth"
+        android:layout_marginBottom="0dp"
+        android:gravity="bottom"
+        android:text="test"
+        android:textAlignment="center"
+        android:textSize="10sp" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/img_compass"
+        android:layout_width="289dp"
+        android:layout_height="385dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/compass" />
+
+    <Spinner
+        android:id="@+id/spinnerSelection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false" />
+
+
+</RelativeLayout>
